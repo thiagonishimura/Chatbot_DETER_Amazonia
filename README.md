@@ -47,7 +47,7 @@ python src\app.py
 ```
 Abra a URL do Gradio gerada no terminal e comece a conversar.
 
-*Perguntas de exemplo estão disponíveis em `sample_questions.txt`.*
+*Perguntas de exemplo estão disponíveis em `exemplo_perguntas.txt`.*
 
 ---
 
