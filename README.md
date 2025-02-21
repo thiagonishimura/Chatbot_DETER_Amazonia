@@ -1,15 +1,8 @@
 ---
 
-# AgentGraph: Sistema de perguntas e respostas de agentes SQL inteligentes e RAG para bate-papo com vários bancos de dados
+# AgentGraph: Sistema de perguntas e respostas de agentes SQL inteligentes para bate-papo com bancos de dados Postgres
 
-Este projeto demonstra como construir um sistema de agente usando Large Language Models (LLMs) que pode interagir com vários bancos de dados e utilizar várias ferramentas. Ele destaca o uso de agentes SQL para consultar bancos de dados grandes de forma eficiente. As principais estruturas usadas neste projeto incluem OpenAI, LangChain, LangGraph, LangSmith e Gradio. O produto final é um chatbot de ponta a ponta, projetado para executar essas tarefas, com o LangSmith usado para monitorar o desempenho dos agentes.
-
----
-
-## Explicação do vídeo:
-Uma explicação detalhada do projeto está disponível no seguinte vídeo do YouTube:
-
-Automatizando agentes LLM para conversar com vários/grandes bancos de dados (combinando agentes RAG e SQL): [Link](https://youtu.be/xsCedrNP9w8?si=v-3k-BoDky_1IRsg)
+Este projeto demonstra como construir um sistema de agente usando Large Language Models (LLMs) que pode interagir com bancos de dados Postgres e utilizar várias ferramentas. Ele destaca o uso de agentes SQL para consultar bancos de dados grandes de forma eficiente. As principais estruturas usadas neste projeto incluem OpenAI, LangChain, LangGraph, LangSmith e Gradio. O produto final é um chatbot de ponta a ponta, projetado para executar essas tarefas, com o LangSmith usado para monitorar o desempenho dos agentes.
 
 ---
 
@@ -28,7 +21,7 @@ Para configurar o projeto, siga estas etapas:
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/thiagonishimura/DETER_IA_LLM_RAG.git
+git clone https://github.com/thiagonishimura/Geoinfo_IA.git
 ```
 2. Instale o Python e crie um ambiente virtual:
 ```bash
@@ -47,17 +40,10 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
-5. Baixe o banco de dados SQL do Travel neste link e cole-o na pasta `data`.
+5. Prepare o arquivo `.env` e adicione seu `OPEN_AI_API_KEY`, `TAVILY_API_KEY` e `LANGCHAIN_API_KEY` e suas configurações do Banco de Dados.
 
-6. Baixe o banco de dados SQL do Chinook neste link e cole-o na pasta `data`.
-
-7. Prepare o arquivo `.env` e adicione seu `OPEN_AI_API_KEY`, `TAVILY_API_KEY` e `LANGCHAIN_API_KEY`.
-
-8. Execute o módulo `prepare_vector_db.py` uma vez para preparar ambos os bancos de dados de vetores.
-```bash
-python src\prepare_vector_db.py
 ```
-9. Execute o aplicativo:
+6. Execute o aplicativo:
 ```bash
 python src\app.py
 ```
@@ -130,12 +116,18 @@ Quando seus bancos de dados estiverem prontos, você pode conectar os agentes at
 
 ---
 
-## Bancos de dados usados
+## Estrutura do .env e Bancos de dados
 
-- **Banco de dados SQL de viagens:** [Link do Kaggle](https://www.kaggle.com/code/mpwolke/airlines-sqlite)
-- **Banco de dados SQL Chinook:** [Banco de dados de amostra](https://database.guide/2-sample-databases-sqlite/)
-- **stories VectorDB**
-- **Perguntas frequentes sobre política de companhias aéreas VectorDB**
+---
+OPENAI_API_KEY=sua_chave
+TAVILY_API_KEY=sua_chave
+LANGCHAIN_API_KEY=sua_chave
+
+POSTGRES_DB_HOST=localhost
+POSTGRES_DB_PORT=5432
+POSTGRES_DB_NAME=nome_banco
+POSTGRES_DB_USER=nome_usuario
+POSTGRES_DB_PASSWORD=senha_banco
 ---
 
 ## Principais estruturas e bibliotecas
