@@ -112,20 +112,25 @@ Quando seus bancos de dados estiverem prontos, você pode conectar os agentes at
 <img src="images/langsmith.png" alt="langsmith">
 </div>
 
----
 
 ## Estrutura do .env e Bancos de dados
 
----
 OPENAI_API_KEY=sua_chave
+
 TAVILY_API_KEY=sua_chave
+
 LANGCHAIN_API_KEY=sua_chave
 
 POSTGRES_DB_HOST=localhost
+
 POSTGRES_DB_PORT=5432
+
 POSTGRES_DB_NAME=nome_banco
+
 POSTGRES_DB_USER=nome_usuario
+
 POSTGRES_DB_PASSWORD=senha_banco
+
 ---
 
 ## Principais estruturas e bibliotecas
