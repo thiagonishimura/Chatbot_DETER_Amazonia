@@ -1,0 +1,23 @@
+primary_agent:
+  llm: gpt-4o-mini # Define o modelo de linguagem (LLM) a ser usado
+  llm_temperature: 0.0  # Define a temperatura do modelo (0 = determinístico, sem aleatoriedade)
+
+postgres_sqlagent_configs:
+  db_type: "postgres"
+  db_host: "localhost"
+  db_port: 5432
+  db_name: "amazonia"
+  db_user: "postgres"
+  db_password: "postgres"
+  llm: "gpt-3.5-turbo"
+  llm_temperature: 0.0
+
+langsmith:
+  tracing: "true"  # Habilita rastreamento
+  project_name: "rag_sqlagent_project"  # Nome do projeto rastreado
+
+tavily_search_api:
+  tavily_search_max_results: 2  # Define o número máximo de resultados de busca a serem retornados
+
+graph_configs:
+  thread_id: 1  # Identifica a sessão do usuário para rastreamento contínuo

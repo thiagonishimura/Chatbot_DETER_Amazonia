@@ -1,0 +1,5 @@
+thread_id,timestamp,user_query,response
+1,19:38:39,Quais bases de dados você tem acesso?,Não encontrei uma tabela correspondente para a consulta.
+1,19:39:00,"Na base de dados amazonia, quais tabelas você tem acesso?
+",Não encontrei uma tabela correspondente para a consulta.
+1,20:04:30,Quais bases de dados você tem acesso?,Não encontrei uma tabela correspondente para a consulta.
