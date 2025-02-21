@@ -41,8 +41,6 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 5. Prepare o arquivo `.env` e adicione seu `OPEN_AI_API_KEY`, `TAVILY_API_KEY` e `LANGCHAIN_API_KEY` e suas configurações do Banco de Dados.
-
-```
 6. Execute o aplicativo:
 ```bash
 python src\app.py
