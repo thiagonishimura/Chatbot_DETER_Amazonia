@@ -57,12 +57,14 @@ Abra a URL do Gradio gerada no terminal e comece a conversar.
 
 Para usar seus próprios dados:
 1. Abra o arquivo `.env`.
-2. Copie as seguintes informações e cole-as dentro do arquivo.
-    POSTGRES_DB_HOST=localhost ou IP do servidor
-    POSTGRES_DB_PORT=5432 (Padrão) ou coloque a porta que esteja utilizando
-    POSTGRES_DB_NAME=nome_do_banco
-    POSTGRES_DB_USER=usuario_do_banco
-    POSTGRES_DB_PASSWORD=senha_do_banco
+2. Copie as seguintes informações e cole-as dentro do arquivo `.env`:
+```bash
+   POSTGRES_DB_HOST=localhost ou IP do servidor
+   POSTGRES_DB_PORT=5432 (Padrão) ou coloque a porta que esteja utilizando
+   POSTGRES_DB_NAME=nome_do_banco
+   POSTGRES_DB_USER=usuario_do_banco
+   POSTGRES_DB_PASSWORD=senha_do_banco
+```
 4. Carregue as configurações em `src\agent_graph\load_tools_config.py`.
 
 Todas as configurações são gerenciadas por meio de arquivos YAML na pasta `configs`, carregada por `src\chatbot\load_config.py` e `src\agent_graph\load_tools_config.py`. Esses módulos são usados ​​para uma distribuição limpa de configurações em todo o projeto.
