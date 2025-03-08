@@ -115,12 +115,9 @@ Quando seus bancos de dados estiverem prontos, você pode conectar os agentes at
 
 ---
 
-## Bancos de dados usados
+## Banco de dado usado
 
-- **Banco de dados SQL de viagens:** [Link do Kaggle](https://www.kaggle.com/code/mpwolke/airlines-sqlite)
-- **Banco de dados SQL Chinook:** [Banco de dados de amostra](https://database.guide/2-sample-databases-sqlite/)
-- **stories VectorDB**
-- **Perguntas frequentes sobre política de companhias aéreas VectorDB**
+- **Banco de dados SQL do projeto DETER Amazônia:**
 ---
 
 ## Principais estruturas e bibliotecas
