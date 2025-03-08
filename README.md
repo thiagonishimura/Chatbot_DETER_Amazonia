@@ -59,7 +59,7 @@ Para usar seus próprios dados:
 1. Abra o arquivo `.env`.
 2. Copie as seguintes informações e cole-as dentro do arquivo `.env`:
 ```bash
-   POSTGRES_DB_HOST=localhost ou IP do servidor
+   POSTGRES_DB_HOST=localhost ou IP_servidor
    POSTGRES_DB_PORT=5432 (Padrão) ou coloque a porta que esteja utilizando
    POSTGRES_DB_NAME=nome_do_banco
    POSTGRES_DB_USER=usuario_do_banco
