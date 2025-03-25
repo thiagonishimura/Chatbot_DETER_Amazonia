@@ -3,6 +3,12 @@ Banco de dados amazonia
 Perguntas:
 
 Quais as tabelas que você tem acesso no banco de dados amazonia utlilizando o schemas public?
+Quais as tabelas que você tem acesso no banco de dados amazonia utlilizando o schemas terraamazon?
+Quais as tabelas que você tem acesso no banco de dados amazonia utlilizando o schemas terrabrasilis?
+
+Na base de dados amazonia, no schema public, quais as view disponíveis?
+Na base de dados amazonia, no schema terraamazon, quais as view disponíveis?
+Na base de dados amazonia, no schema public, quais as view disponíveis?
 
 Na base de dados amazonia, no schemas public e na tabela sdr_alerta me retorne as colunas que essa tabela possui.
 
